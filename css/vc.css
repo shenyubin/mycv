@@ -1,0 +1,122 @@
+/*reset*/
+  body,h1,h2,h3,ul,li,p,a,img{ margin: 0; padding: 0; font-family: "微软雅黑"; font-size: 12px; font-weight: normal;}
+  a{ text-decoration: none;}
+  ul,li{ list-style: none;}
+  /*公用样式*/
+	 p{ text-indent: 2em; margin-bottom: 5px; line-height: 18px;}
+	 h2{ width: 100px; font-size: 16px;  line-height: 16px; text-align: center; font-weight: bold; margin:20px auto; }
+	 h3{ width: 150px; font-size: 14px;  line-height: 14px; color: #999999; margin:20px auto;}
+	 strong{ font-size: 14px;  line-height: 14px; margin-bottom: 5px;}
+	.pages{ max-width: 1000px; margin: 0 auto;}
+	 
+	#my{ min-height: 250px; max-width: 1000px; margin: 30px auto;}
+	#my .cont{ float: left; max-width: 550px; margin: 30px 0 30px 10px;}
+	#my .img{ float: left; width: 180px; height: 180px; margin: 0 10px 10px 10px; border-radius: 50%; border: 10px solid #E5E5E5; background: #E5E5E5;}
+	#my img{ width: 180px; height: 180px; border-radius: 50%;}
+	#my h1{ font-size: 24px;  line-height: 24px; font-weight: bold; margin-bottom: 20px;}
+	#my p{}
+	
+	#project img{ width: 200; height: 120px;}
+	
+	#myskills ul{}
+	#myskills ul li{ width: 100px; height: 20px; margin-bottom: 5px; line-height: 20px; text-indent: 1em; color: ;}
+	#myskills .sk1{ width: 150px; border-left: 2px solid #035AFA; background: #54adf8;}
+	#myskills .sk2{ width: 130px; border-left: 2px solid #03FA0F; background: #71F779;}
+	#myskills .sk3{ width: 120px; border-left: 2px solid #71FA1A; background: #AAF57C;}
+	#myskills .sk4{ width: 100px; border-left: 2px solid #D8FC03; background: #E3FA52;}
+	#myskills .sk5{ width: 100px; border-left: 2px solid #FCAF05; background: #FAC95F;}
+  /*纸张样式*/
+pre {
+	max-height: 200px;
+	overflow: auto;
+}
+
+div.demo {
+	overflow: auto;
+}
+
+.box {
+	float: left;
+	width: 240px;
+	min-height: 250px;
+	margin: 30px 0 0 10px;
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.box1{
+	padding: 0 0 1px 10px;
+	background: #f3f3f3;
+	background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1,#f3f3f3));
+	background: -webkit-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, #fff);
+	background: -o-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, #fff);
+	background: -moz-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, #fff);
+	border-top: 1px solid white;
+	border-right: 1px solid #ccc;
+	-webkit-border-radius: 0 0 60px 0;
+	-moz-border-radius: 0 0 60px 0;
+	border-radius: 0 0 60px 0;
+	-webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+	box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+	}
+	.box1:before{
+	content:''; 
+	width: 25px;
+	height: 20px;
+	background: white;
+	position: absolute;
+	bottom:0; right:0;
+	background:#fff;
+	background: -webkit-gradient(linear, 0% 20%, 50% 40%, from(#fff), to( #eee), color-stop(.1,#fff));
+	background: -webkit-linear-gradient(0 50%, #fff, #fff 10%, #eee);
+	background: -o-linear-gradient(0 50%, #fff, #fff 10%, #eee);
+	background: -moz-linear-gradient(0 50%, #fff, #fff 10%, #eee);
+	-webkit-border-radius: 0 0 30px 0;
+	-moz-border-radius: 0 0 30px 0;
+	border-radius: 0 0 30px 0;
+	-webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -2px -2px 5px rgba(0,0,0,0.3);
+	box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+	-webkit-transform: rotate(-20deg) skew(-40deg,-3deg) translate(-13px,-13px);
+	-moz-transform: rotate(-20deg) skew(-40deg,-3deg) translate(-13px,-13px);
+	-o-transform: rotate(-20deg) skew(-40deg,-3deg) translate(-13px,-13px);
+	transform: rotate(-20deg) skew(-40deg,-3deg) translate(-13px,-13px);
+	}
+	
+	.box1:after{
+	content: '';
+	z-index: -1;
+	width: 100px;
+	height: 100px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background: rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	-webkit-box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 20px 20px 17px rgba(0,0,0,0.2);
+	box-shadow: 20px 20px 17px rgba(0,0,0,0.2);
+	-webkit-transform: rotate(0deg) translate(-45px,-20px) skew(20deg);
+	-moz-transform: rotate(0deg) translate(-40px,-17px) skew(20deg);
+	-o-transform: rotate(0deg) translate(-40px,-17px) skew(20deg);
+	transform: rotate(0deg) translate(-40px,-17px) skew(20deg); 
+	}
+	
+	.box1 .ribbon{
+	position:absolute;
+	top:-25px; left: 25%;
+	width: 130px;
+	height: 40px;
+	background:#ccc;
+	background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1,rgba(0, 0, 0, 0.2)));
+	background: -webkit-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
+	background: -o-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
+	background: -moz-linear-gradient(555% 0 180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.0));
+	border-left: 1px dashed rgba(0, 0, 0, 0.1);
+	border-right: 1px dashed rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+	}
