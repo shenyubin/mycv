@@ -3,7 +3,11 @@
   a{ text-decoration: none;}
   ul,li{ list-style: none;}
   /*公用样式*/
-	 p{ text-indent: 2em; margin-bottom: 5px; line-height: 18px;}
+ 
+	.clear { zoom:1; }
+	.clear:after { content:''; display:block; clear:both; }
+	
+	 p{ text-indent: 2em; margin-bottom: 5px; line-height: 18px; display: block; padding-right: 5px;}
 	 h2{ width: 100px; font-size: 16px;  line-height: 16px; text-align: center; font-weight: bold; margin:20px auto; }
 	 h3{ width: 150px; font-size: 14px;  line-height: 14px; color: #999999; margin:20px auto;}
 	 strong{ font-size: 14px;  line-height: 14px; margin-bottom: 5px;}
@@ -25,19 +29,26 @@
 	#myskills .sk3{ width: 120px; border-left: 2px solid #71FA1A; background: #AAF57C;}
 	#myskills .sk4{ width: 100px; border-left: 2px solid #D8FC03; background: #E3FA52;}
 	#myskills .sk5{ width: 100px; border-left: 2px solid #FCAF05; background: #FAC95F;}
+	
+	.foot_test{ height: 30px; line-height: 30px;}
+	
+	/*响应式*/
+	@media only screen and (max-width: 800px) {
+		.pages{ width: 90%; margin:30px auto;}
+		#my .img, #my .cont{ float: none;  margin: 0 auto;}
+		#my .cont h1{ margin: 20px auto; text-align: center;}
+	}
+	@media only screen and (max-width: 640px) {
+		.box{ margin-left: 0;}
+		.box1{ padding-left: 0;}
+		.pages{ width: 98%; margin:30px auto;}
+		#my .img, #my .cont{ float: none;  margin: 0 auto;}
+		#my .cont h1{ display: block; margin: 20px auto; text-align: center;}
+	}
   /*纸张样式*/
-pre {
-	max-height: 200px;
-	overflow: auto;
-}
-
-div.demo {
-	overflow: auto;
-}
-
 .box {
 	float: left;
-	width: 240px;
+	width: 280px;
 	min-height: 250px;
 	margin: 30px 0 0 10px;
 	display: inline-block;
