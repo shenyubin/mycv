@@ -18,40 +18,28 @@
 	#my .img{ float: left; width: 180px; height: 180px; margin: 0 10px 10px 10px; border-radius: 50%; border: 10px solid #E5E5E5; background: #E5E5E5;}
 	#my img{ width: 180px; height: 180px; border-radius: 50%;}
 	#my h1{ font-size: 24px;  line-height: 24px; font-weight: bold; margin-bottom: 20px;}
-	#my p{}
-	
-	#project img{ width: 200; height: 120px;}
 	
 	#myskills ul{}
-	#myskills ul li{ width: 100px; height: 20px; margin-bottom: 5px; line-height: 20px; text-indent: 1em; color: ;}
+	#myskills ul li{ position: relative; z-index: 1; width: 100px; height: 30px; margin-bottom: 5px; line-height: 30px; text-indent: 1em; color: ;}
 	#myskills .sk1{ width: 150px; border-left: 2px solid #035AFA; background: #54adf8;}
 	#myskills .sk2{ width: 130px; border-left: 2px solid #03FA0F; background: #71F779;}
 	#myskills .sk3{ width: 120px; border-left: 2px solid #71FA1A; background: #AAF57C;}
-	#myskills .sk4{ width: 100px; border-left: 2px solid #D8FC03; background: #E3FA52;}
+	#myskills .sk4{ width: 120px; border-left: 2px solid #D8FC03; background: #E3FA52;}
 	#myskills .sk5{ width: 100px; border-left: 2px solid #FCAF05; background: #FAC95F;}
+	#myskills .info{ position: absolute; display: none; z-index: 2; width: 250px; border: 1px solid #CCCCCC; background-color: rgba(255,255,255,.8);}
+	#myskills li:hover > .info{display: block;}
 	
-	.foot_test{ height: 30px; line-height: 30px;}
+	#project img{ width: 200; height: 120px;}
 	
-	/*响应式*/
-	@media only screen and (max-width: 800px) {
-		.pages{ width: 90%; margin:30px auto;}
-		#my .img, #my .cont{ float: none;  margin: 0 auto;}
-		#my .cont h1{ margin: 20px auto; text-align: center;}
-	}
-	@media only screen and (max-width: 640px) {
-		.box{ margin-left: 0;}
-		.box1{ padding-left: 0;}
-		.pages{ width: 98%; margin:30px auto;}
-		#my .img, #my .cont{ float: none;  margin: 0 auto;}
-		#my .cont h1{ display: block; margin: 20px auto; text-align: center;}
-	}
+	.foot_text{ height: 30px; line-height: 30px; margin-top: 20px;}
+	
   /*纸张样式*/
 .box {
-	float: left;
-	width: 280px;
-	min-height: 250px;
+	width: 270px;
+	min-height: 270px;
 	margin: 30px 0 0 10px;
 	display: inline-block;
+	vertical-align: top;
 	background: #fff;
 	border: 1px solid #ccc;
 	position: relative;
@@ -130,4 +118,19 @@
 	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+	}
+	
+	/*响应式*/
+	@media only screen and (max-width: 800px) {
+		.pages{ width: 90%; margin:30px auto;}
+		#my .img, #my .cont{ float: none;  margin: auto;}
+		#my .cont h1{ margin: 20px auto; text-align: center;}
+	}
+	@media only screen and (max-width: 640px) {	
+		.contin{ width: 99%; text-align: center;}
+		.box{ float: none; margin-left: 0;}
+		.box p, .box li, .box strong{ text-align: left;}
+		.pages{ width: 95%; margin:30px auto;}
+		#my .img, #my .cont{ float: none;  margin: 0 auto;}
+		#my .cont h1{ display: block; margin: 20px auto; text-align: center;}
 	}
